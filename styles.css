@@ -1,0 +1,108 @@
+/* @keyframes top {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+        transform: translate(12.5%, 0%) rotate(22.5deg) scale(1.075)
+    }
+    100% {
+      transform: translate(25%, 0%) rotate(45deg) scale(1.15);
+    }
+  }
+
+@keyframes middle {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: translate(0px, -50%);
+      opacity: 0.5;
+    }
+    100% {
+        transform: translate(0px, -50px) scale(0);
+        opacity: 0;
+    }    
+}  
+
+@keyframes bottom {
+    0% {
+        transform: rotate(0);
+    }
+  50% {
+      transform: translate(12.5%, 8%) rotate(-22.5deg) scale(1.075)
+  }
+  100% {
+    transform: translate(25%, 16%) rotate(-45deg) scale(1.15);
+  }
+}   */
+
+.hamburger {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    width:50px;
+}
+.svg-container {
+    width: 50px;
+    height: 50px;
+}
+
+.hamburger .top {
+    position: absolute;
+    transition-duration: .2s;
+    transition-property: all;
+}
+
+.hamburger:hover .top {
+    transform: translate(25%, 0%) rotate(45deg) scale(1.15);    
+}
+
+
+.hamburger .middle {
+    position: absolute;
+    transition-duration: .25s;
+    transition-property: all;
+}
+
+.hamburger:hover .middle { 
+    transform: translate(0px, -50px) scale(0);
+    opacity: 0;
+}
+
+.hamburger .bottom {
+    position: absolute;
+    transition-duration: .25s;
+    transition-property: all; 
+    transform-origin: left bottom;
+   
+}
+
+.hamburger:hover .bottom  {
+    transform: translate(25%, 16%) rotate(-45deg) scale(1.15);    
+}
+
+/* .hamburger:hover .top {
+    position: absolute;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-name: top;
+    animation-timing-function: linear;
+}
+
+.hamburger:hover .middle {
+    animation-duration: .25s;
+    position: absolute;
+    animation-fill-mode: forwards;
+    animation-name: middle;
+    animation-timing-function: linear;
+    transform-origin: center;
+}
+
+.hamburger:hover .bottom  {
+    position: absolute;
+    transform-origin: left bottom;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+    animation-name: bottom;
+    animation-timing-function: linear
+} */
